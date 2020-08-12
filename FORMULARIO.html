@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/formu.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>Formulario Ingreso de Datos</title>
+</head>
+<body>
+	<header class="cabezera">
+		<div class="wrap">
+			<div class="widget">
+				<div class="fecha">
+					<p class="diaSemana" id="diaSemana"></p>
+						<p id="dia" class="dia"></p>
+						<p>de</p>
+						<p id="mes" class="mes"></p>
+						<p>del</p>
+						<p id="year" class="year"></p>
+				</div>
+				<div class="reloj">
+					<p id="horas" class="horas"></p>
+					<p>:</p>
+					<p id="minutos" class="minutos"></p>
+					<p>:</p>
+					<div class="caja-segundos">
+						<p class="segundos" id="segundos"></p>
+						<div class="ampm">
+							<p class="ampm" id="ampm"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<a href="#" class="icono">
+
+			<i class="fa fa-user" ></i>
+		</a>
+		
+			<div class="form_top">
+				<h2>Formulario <span>Registro</span></h2>
+			</div>		
+		<form class="form_reg" action="">
+			<!--Ingresando a grphemica.com buscaremos cada caracter que se va a utilizar: ejemplo &#128100 para user-->
+			<input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
+            <input class="input" type="email" placeholder="&#9993;  Email" required>
+            <input class="input" type="text" placeholder="&#9742;  Teléfono" required>
+            <input class="input" type="text" placeholder="&#21488;  Dirección" required>
+			<div class="terminos">
+				<input type="checkbox" name="terminos" id="terminos">
+				<label for="terminos ">Acepto terminos y condiciones</label>
+				<h2>Ya tienes una cuenta <a href="#">ingresa aqui</a></h2>
+			</div>
+			<div class="btn_form">
+				<input class="btn_submit" type="button" value="REGISTRAR">
+            	<input class="btn_reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	<footer class="pie">
+		<div class="redes">
+			<p class="texto1">Elavorado por Diego Iza Estudiante  de  <a href="#">Sexto"C"</a> </p>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header{
+	background-color: #EFEFEF;
+}
+.wrap{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.widget{
+    width: 50%;
+    margin:  100px auto;
+}
+.widget p{
+    display: inline-block;
+    /* se hacen fila ya no columna  */
+    font-size: 30px;
+	
+	color: #EFEFEF;
+	
+}
+.widget .fecha .diaSemana,
+.widget .fecha .dia,
+.widget .fecha .mes,
+.widget .fecha .year{
+    text-decoration: underline;
+}
+.fecha{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,.5);
+    /* padding: 20px; */
+    width: 100%;
+}
+.reloj{
+    width: 100%;
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+
+}
+.caja-segundos{
+display: inline-block;
+}
+.ampm{
+    display: inline-block;
+    /* padding: 0px 15px; */
+}
+
+body {
+	background-color: #52829b;
+}
+
+.container {
+	/* Permite a los autores restringir el ancho del contenido a un rango determinado. */
+	max-width: 500px;
+	/* Especifica la altura del área de contenido, el área de relleno o el área del borde (dependiendo del 'tamaño de cuadro') de ciertos cuadros. */
+	height: auto;
+	/* Establece el color de fondo de un elemento. */
+	background-color: #EFEFEF;
+	/* Propiedad abreviada para establecer valores del grosor del área de margen. y el auto para los lados y ajustar el contenedor*/
+	margin: 5% auto;
+	padding-top: 10px;
+	/* Propiedad abreviada para establecer valores del grosor del área de relleno. Si el font-size del <html> es 16px, 1rem sería igual a 16px en cualquier parte del documento.*/
+	padding-bottom: 1rem;
+	border-radius: 10px;
+	border: solid #111111 2px;
+	
+}
+.container .icono {
+	display: inline-block;
+	text-decoration: none;
+	color: #111111;
+	width: 100px;
+    font-size: 70px;
+    border: 1px solid black;
+    margin-top: 15px;
+    border-radius: 200px;
+	margin-bottom: 15px;
+	box-shadow: 5px 5px 5px #3d5c72;
+	margin-left: 200px;
+	
+}
+.container .icono i{
+	margin-left: 25px;
+}
+.container .icono:hover{
+	cursor: progress;
+	transition: all .7s;
+	background-color:  #3d5c72;
+	color: #EFEFEF;
+	
+	
+}
+.form_top {
+	/* Especifica el ancho del área de contenido, el área de relleno o el área del borde (dependiendo del 'tamaño de cuadro') de ciertos cuadros. */
+	width: 100%;
+	text-align: center;
+	/* Propiedad abreviada para establecer valores del grosor del área de relleno. 2rem = 2 × 16px = 32px */
+	padding: 2rem 0 1rem;
+	/* Propiedad abreviada para establecer el ancho, el estilo y el color del borde */
+	border-top: solid .4rem #F39B53;
+	/* Propiedad abreviada para establecer valores del grosor del área de margen. Si el font-size del <html> es 16px, 1rem sería igual a 16px en cualquier parte del documento.*/
+	margin-bottom: 1rem;
+}
+
+.form_top h2 {
+	/* Especifica su grado de negrura o grosor, da negrita al texto h2. */
+	font-weight: bold;
+	color: #4d4a4a;
+	font-size: 18px;
+}
+
+h2 span {
+	/* permite dar propiedades al al span que se encuentra dentro del h2 */
+	color: #b3682c;
+}
+
+.form_reg {
+	/* parte superior e inferios 0, y alos lados 2rem a los lados. 2rem = 2 × 16px = 32px */
+	padding: 0 2rem;
+	/* En combinación con 'flotante' y 'posición', determina el tipo de cuadro o cuadros que se generan para un elemento. */
+	display: flex;
+	/* para cambiar el flujo por defecto */
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn_form {
+	display: flex;
+	/* Para que los botones mantengan una separación igual del borde y entre ellos */
+	justify-content: space-around;
+	/* establece la anchura de su margen superior */
+	margin-top: 1rem;
+}
+
+.input, .btn_submit, .btn_reset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #be3a3a .2rem;
+	transition: all .7s;
+	
+	border-radius: 5px;
+	
+}
+
+
+.input:focus {
+	border-bottom: solid #38be4e .2rem;
+}
+
+.btn_submit, .btn_reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+
+.btn_reset {
+	background-color: #EDA135;
+}
+
+.btn_submit:hover {
+	/* con hover cuando se pasa el puntero del mouse este cambia de color */
+	background-color: #3d5c72;
+}
+
+.btn_reset:hover{
+	background-color: #724a24;
+	
+}
+.btn_reset,
+.btn_submit
+{
+	border: solid brown 3px;
+	cursor: pointer;
+	color: #111111;
+}
+ .terminos{
+	 margin-top: 20px;
+    text-align: center;
+    color: #442244; 
+}
+.terminos label{
+    margin-left: 10px;
+}
+.btn_reset:hover{
+	transition: all 1s;
+	color: #EFEFEF;
+}
+.btn_submit:hover{
+	transition: all 1s;
+	color: #EFEFEF;
+}
+.pie{
+	background-color: #EFEFEF;
+	padding: 40px 0px;
+}
+.pie .redes .texto1{
+	text-align: center;
+	font-size: 30px;
+	color: #111111;
+	text-decoration: underline;
+}
+.pie .redes .texto1 a{
+	text-align: center;
+	font-size: 30px;
+	color: #724a24;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+.pie .redes .texto1 a:hover{
+	transition: all 3s;
+	color:#111111;
+}
+
